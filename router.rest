@@ -1,0 +1,19 @@
+GET http://localhost:5000/user/
+###
+POST http://localhost:5000/user/
+Content-Type: application/json
+
+{
+    "username": "tung",
+    "password" : "thanh"
+}
+###
+GET http://localhost:5000/api/encounter
+###
+POST http://localhost:5000/api/reportLocation
+Content-Type: application/json
+
+{
+    "username": "tuang",
+    "password" : "thanh"
+}
