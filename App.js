@@ -14,10 +14,10 @@ mongoose.connect(
     console.log("conected");
   }
 );
-app.use("/graphql", authenGraphql);
+// app.use("/graphql", authenGraphql);
 
 const userRoute = require("./routes/user");
-app.use("/user", userRoute);
+app.use("/api", userRoute);
 
 const locationRoute = require("./routes/location");
 app.use("/api", locationRoute);
@@ -26,3 +26,4 @@ const PORT = 5000;
 const listener = app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
+module.exports = app;

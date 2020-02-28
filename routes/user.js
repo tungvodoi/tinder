@@ -24,6 +24,6 @@ const authenGraphql = require("../authen.graphql");
 //     }
 // })
 
-router.use("/graphql", authenGraphql);
+router.use("/user", authenGraphql);
 
 module.exports = router;
